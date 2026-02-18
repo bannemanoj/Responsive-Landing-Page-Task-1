@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Zumba Academy</title>
+    <title>Zumba Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Business Name -->
+    <h1 class="business-name">Zumba Academy</h1>
+    <div class="title">
+    <p class="welcome">Welcome to Zumba Academy best fitness center</p>
+
+</body>
+</html>
+<style>
+body{
+margin:0;
+background:black;
+font-family:Arial;
+}
+
+/* Combined Header Section */
+.home-header{
+text-align:center;
+margin-top:150px;
+color:rgb(66, 16, 190);
+}
+
+.home-header h1{
+font-size:50px;
+font-weight:bold;
+margin-bottom:10px;
+}
+
+.home-header p{
+font-size:24px;
+font-weight:bold;
+}
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(to right,#f0ebeb,#efe7ea);
+}
+.menu-container{
+position:absolute;
+right:20px;
+top:20px;
+background:#f7f3f3;
+padding:8px;
+border-radius:10px;
+}
+.menu-item{
+display:inline-block;
+background:#333;
+color:white;
+padding:5px 8px;
+margin:3px;
+font-size:13px;
+border-radius:4px;
+text-decoration:none;
+}
+.menu-item:hover{ background:#130f11; }
+.login-box{
+width:320px;
+background:white;
+color:black;
+margin:150px auto;
+padding:20px;
+border-radius:10px;
+text-align:center;
+}
+input{ width:90%; padding:8px; margin:8px; }
+button{
+background:#120f10;
+color:white;
+border:none;
+padding:10px;
+width:95%;
+cursor:pointer;
+}
+button:hover{ background:#252424; }
+</style>
+</head>
+<body>
+
+<div class="menu-container">
+<a href="index.html" class="menu-item">Home</a>
+<a href="services.html" class="menu-item">Service</a>
+<a href="register.html" class="menu-item">Registration</a>
+<a href="#" class="menu-item">About</a>
+<a href="#" class="menu-item">Contact</a>
+</div>
+
+<div class="login-box">
+<h2>Sign In</h2>
+<input type="text" id="phone" placeholder="Phone Number">
+<input type="password" id="password" placeholder="Password">
+<button onclick="login()">Login</button>
+<p>New User?
+<a href="register.html">Sign Up</a> or
+<a href="register.html">Create Account</a></p>
+</div>
+
+<script>
+function login(){
+let phone=document.getElementById("phone").value;
+let password=document.getElementById("password").value;
+let savedPhone=localStorage.getItem("phone");
+let savedPassword=localStorage.getItem("password");
+if(phone===savedPhone && password===savedPassword){
+alert("Login Successful");
+window.location="services.html";
+}else{
+alert("Invalid Details");
+}
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Zumba Services</title>
+<style>
+body{
+font-family:Arial;
+background:#111;
+color:white;
+padding:20px;
+}
+.box{
+background:#dd2476;
+padding:15px;
+margin:10px;
+border-radius:8px;
+}
+.timing-box{
+background:#0072ff;
+padding:15px;
+margin:10px;
+border-radius:8px;
+cursor:pointer;
+}
+.hidden{ display:none; }
+.online{
+background:#00c6ff;
+color:black;
+padding:15px;
+margin:10px;
+border-radius:8px;
+}
+.offline{
+background:#ffcc00;
+color:black;
+padding:15px;
+margin:10px;
+border-radius:8px;
+}
+</style>
+</head>
+<body>
+
+<h1>Zumba Academy Services</h1>
+
+<div class="box">1. Dance-based workout – salsa, hip-hop, Bollywood</div>
+<div class="box">2. Full-body exercise improves fitness</div>
+<div class="box">3. Fun energetic workout</div>
+<div class="box">4. Helps in weight loss</div>
+<div class="box">5. Improves coordination</div>
+<div class="box">6. Stress relief</div>
+<div class="box">7. No equipment needed</div>
+<div class="box">8. Online and Offline service available</div>
+
+<div class="timing-box" onclick="toggleTiming()">
+Click Here to View Timings
+<div id="timingDetails" class="hidden">
+<p>
+Zumba Academy 5:00 AM – 10:30 PM<br>
+Morning: 6:00 AM – 8:00 AM<br>
+Evening: 6:00 PM – 8:30 PM<br><br>
+Contours Studio 6:00 AM – 8:30 PM<br>
+Morning: 6:30 / 7:30<br>
+Evening: 6:30 / 7:30<br><br>
+Reborn Fitness 6:00 AM – 10:00 PM<br>
+Morning: 7:00<br>
+Evening: 7:00<br><br>
+General Morning: 6:00 AM – 9:00 AM<br>
+Evening: 5:00 PM – 8:30 PM
+</p>
+</div>
+</div>
+
+<div class="online">
+<h3>Online Classes</h3>
+Zoom sessions, flexible timing<br>
+Cost ₹499/hr approx
+</div>
+
+<div class="offline">
+<h3>Offline Classes</h3>
+Gym studio sessions<br>
+Cost ₹500–₹1500
+</div>
+
+<script>
+function toggleTiming(){
+let x=document.getElementById("timingDetails");
+if(x.classList.contains("hidden"))
+x.classList.remove("hidden");
+else
+x.classList.add("hidden");
+}
+</script>
+
+</body>
+</html>
